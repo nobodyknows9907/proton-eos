@@ -1,0 +1,13 @@
+FROM /home/wolf/proton-eos/models/smollm2:360m
+FROM /home/wolf/proton-eos/models/codegemma:2b
+FROM /home/wolf/proton-eos/models/granite3-moe
+FROM /home/wolf/proton-eos/models/deepseek-coder
+
+LICENSE "Apache-2.0"
+
+TEMPLATE "Merged AI model for Proton-eos with DirectX API translation, Vulkan and DirectX shader optimization, and game performance tuning. The AI will evolve and learn how to make DirectX run natively on Linux with the provided tools in the Proton install."
+
+PARAMETER "proton-optimization-mode=enabled"
+PARAMETER "dxvk-optimization-enabled"
+PARAMETER "vkd3d-optimization-enabled"
+PARAMETER "resource-use-and-optimization-enabled"

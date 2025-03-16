@@ -1,0 +1,179 @@
+[require]
+shader model >= 4.0
+
+[pixel shader]
+float4 main() : SV_TARGET
+{
+    uint x = 5;
+    uint y = 15;
+
+    return float4(x + y, x - y, x * y, x / y);
+}
+
+[test]
+draw quad
+probe (0, 0) rgba (20.0, 4294967296.0, 75.0, 0.0)
+
+[pixel shader]
+float4 main() : SV_TARGET
+{
+    uint x = 5;
+    uint y = 15;
+
+    return float4(x % y, +x, -x, y / x);
+}
+
+[test]
+draw quad
+probe (0, 0) rgba (5.0, 5.0, 4294967296.0, 3.0)
+
+[pixel shader fail(sm<6)]
+float4 main() : SV_TARGET
+{
+    uint x = 1;
+    uint y = 0;
+
+    return x / y;
+}
+
+[test]
+draw quad
+probe (0, 0) rgba (0.0, 0.0, 0.0, 0.0)
+
+[pixel shader fail(sm<6)]
+float4 main() : SV_TARGET
+{
+    uint x = 1;
+    uint y = 0;
+
+    return x % y;
+}
+
+[test]
+draw quad
+probe (0, 0) rgba (0.0, 0.0, 0.0, 0.0)
+
+
+% Test expression normalization and simplification.
+
+[pixel shader]
+uniform uint4 x;
+
+float4 main() : SV_TARGET
+{
+    return 6 + (2 * x * 3) - 5;
+}
+
+[test]
+uniform 0 uint4 0 1 2 3
+todo(msl) draw quad
+probe (0, 0) rgba (1.0, 7.0, 13.0, 19.0)
+
+% Test collecting terms with constant coefficients.
+
+[pixel shader]
+uniform uint x;
+
+float4 main() : SV_TARGET
+{
+    uint4 res;
+    res.x = x * 2 + (3 + 3 * x);
+    res.y = (x & 4) | (x & 1);
+    res.z = max(min(2, x), min(x, 10));
+    res.w = 0;
+    return res;
+}
+
+[test]
+uniform 0 uint 7
+todo(msl) draw quad
+probe (0, 0) rgba(38.0, 5.0, 7.0, 0.0)
+
+[rtv 0]
+format r32g32b32a32-uint
+size (2d, 640, 480)
+
+[pixel shader]
+uniform uint4 c;
+
+uint4 main() : SV_TARGET
+{
+    uint x = c.x & 0xffff;
+    uint y = c.y & 0xffff;
+
+    return uint4(x | (x << c.z), y | (c.z + y), (x >> c.w) ^ x, (c.w * y) ^ y);
+}
+
+[test]
+uniform 0 uint4 0xccaa5533 7 1 2
+todo(glsl | msl) draw quad
+probe (0, 0) rgbaui(0xff77, 0xf, 0x407f, 0x9)
+
+[require]
+shader model >= 6.2
+native-16-bit
+
+[pixel shader]
+uniform uint16_t2 u;
+
+uint4 main() : sv_target
+{
+    uint16_t i = 0x7fff, j = 0xffff;
+    return uint4(u.x + i, u.y + j, 0, 0);
+}
+
+[test]
+uniform 0 uint4 0 0 0 0
+draw quad
+probe (0, 0) rgbaui(0x7fff, 0xffff, 0, 0)
+uniform 0 uint4 0xffff0001 0 0 0
+draw quad
+probe (0, 0) rgbaui(0x8000, 0xfffe, 0, 0)
+
+[pixel shader]
+uniform uint16_t4 u;
+uniform uint i;
+
+uint4 main() : sv_target
+{
+    uint16_t arr[4] = {1, 2, 0x7fff, 0xffff};
+    return uint4(u.x + arr[i], u.y + arr[i + 1], 0, 0);
+}
+
+[test]
+uniform 0 uint4 0xfffe0002 0 2 0
+draw quad
+probe (0, 0) rgbaui(0x8001, 0xfffd, 0, 0)
+uniform 0 uint4 0 0 0 0
+draw quad
+probe (0, 0) rgbaui(1, 2, 0, 0)
+
+[pixel shader]
+uniform uint16_t4 u;
+
+uint4 main() : sv_target
+{
+    uint16_t i = 3, j = 5;
+    return uint4(u.x * i, u.y * j, u.z * i, u.w * j);
+}
+
+[test]
+uniform 0 uint 0x90007
+uniform 1 uint 0xfff7fff9
+draw quad
+probe (0, 0) rgbaui(21, 45, 0xffeb, 0xffd3)
+
+[pixel shader]
+uniform uint16_t4 u;
+
+uint4 main() : sv_target
+{
+    uint16_t i = 0xffff, j = 5;
+    return uint4(u.x / i, u.y / j, u.z / i, u.w / j);
+}
+
+[test]
+uniform 0 uint 0x000bfffe
+uniform 1 uint 0xffffffff
+draw quad
+probe (0, 0) rgbaui(0, 2, 1, 0x3333)

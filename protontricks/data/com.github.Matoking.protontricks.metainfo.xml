@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.Matoking.protontricks</id>
+  <name>Protontricks</name>
+  <summary>Apps and fixes for Proton games</summary>
+  <icon type="stock">wine</icon>
+  <provides>
+    <binary>protontricks</binary>
+    <binary>protontricks-launch</binary>
+  </provides>
+  <launchable type="desktop-id">protontricks.desktop</launchable>
+  <recommends>
+    <id>com.valvesoftware.Steam</id>
+  </recommends>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://raw.githubusercontent.com/Matoking/protontricks/master/data/screenshot.png</image>
+      <caption>App selection screen</caption>
+    </screenshot>
+  </screenshots>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>console</control>
+  </supports>
+  <content_rating type="oars-1.1"/>
+  <description>
+    <p>Run Winetricks commands for Steam Play/Proton games among other common Wine features,
+       such as launching external Windows executables. This is often useful when a game requires closed-source runtime libraries or applications
+       that are not included with Proton.</p>
+  </description>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <developer id="matoking.com">
+    <name>Janne Pulkkinen</name>
+  </developer>
+  <url type="homepage">https://github.com/Matoking/protontricks</url>
+  <url type="help">https://github.com/Matoking/protontricks#readme</url>
+  <url type="bugtracker">https://github.com/Matoking/protontricks/issues</url>
+  <project_license>GPL-3.0</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <update_contact>janne.pulkkinen@protonmail.com</update_contact>
+  <releases>
+      <release version="1.12.1" date="2025-03-08"/>
+      <release version="1.12.0" date="2024-09-16"/>
+      <release version="1.11.1" date="2024-02-20"/>
+      <release version="1.11.0" date="2023-12-30"/>
+      <release version="1.10.5" date="2023-09-05"/>
+      <release version="1.10.4" date="2023-08-26"/>
+      <release version="1.10.3" date="2023-05-06"/>
+      <release version="1.10.2" date="2023-02-13"/>
+      <release version="1.10.1" date="2022-12-10"/>
+      <release version="1.10.0" date="2022-11-27"/>
+      <release version="1.9.2" date="2022-09-16"/>
+      <release version="1.9.1" date="2022-08-28"/>
+      <release version="1.9.0" date="2022-07-02"/>
+      <release version="1.8.2" date="2022-05-16"/>
+      <release version="1.8.1" date="2022-03-20"/>
+      <release version="1.8.0" date="2022-02-26"/>
+      <release version="1.7.0" date="2022-01-08"/>
+      <release version="1.6.2" date="2021-11-28"/>
+      <release version="1.6.1" date="2021-10-18"/>
+      <release version="1.6.0" date="2021-08-08"/>
+  </releases>
+</component>

@@ -1,0 +1,34 @@
+{
+  "model_format": "gguf",
+  "model_family": "proton-eos",
+  "model_families": ["proton-eos", "granitemoe", "codegemma", "deepseekcoder", "smollm2"],
+  "model_type": "3.5B",
+  "file_type": "Q4_K_M",
+  "architecture": "amd64",
+  "os": "linux",
+  "rootfs": {
+    "type": "layers",
+    "diff_ids": [
+      "sha256:123456abcdef123456abcdef123456abcdef123456abcdef123456abcdef1234",
+      "sha256:abcdef123456abcdef123456abcdef123456abcdef123456abcdef123456abcdef",
+      "sha256:deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef",
+      "sha256:cafebabecafebabecafebabecafebabecafebabecafebabecafebabecafebabe"
+    ]
+  },
+  "license": "Apache-2.0",
+  "template": "Merged AI model for Proton-eos with DirectX API translation, Vulkan and DirectX shader optimization, and game performance tuning. The AI will evolve and learn how to make DirectX run natively on Linux with the provided tools in the Proton install.",
+  "parameters": {
+    "proton-optimization-mode": "enabled",
+    "dxvk-optimization-enabled": "true",
+    "vkd3d-optimization-enabled": "true",
+    "resource-use-and-optimization-enabled": "true",
+    "learning-mode": "adaptive",
+    "auto-update": "incremental"
+  },
+  "stop_sequences": ["<|im_start|>", "<|im_end|>"],
+  "sha256": "9c3a5136d78a9c93be70a34ea99e891a354d6f28695133482b98836aebd9b2e4",
+  "system": {
+    "instruction": "{{ .Prompt }}",
+    "response_format": "{{ .Response }}"
+  }
+}

@@ -1,0 +1,1964 @@
+~/proton-eos/dxvk ~/proton-eos
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+~/proton-eos
+~/proton-eos/vkd3d-proton ~/proton-eos
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+~/proton-eos
+~/proton-eos/dxvk-nvapi ~/proton-eos
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+~/proton-eos
+./patches/protonprep-valve-staging.sh: line 21: pushd: gstreamer: No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+GSTREAMER: fix for unclosable invisible wayland opengl windows in taskbar
+./patches/protonprep-valve-staging.sh: line 25: ../patches/gstreamer/5509.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 26: ../patches/gstreamer/5511.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 27: popd: directory stack empty
+./patches/protonprep-valve-staging.sh: line 29: pushd: protonfixes: No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+./patches/protonprep-valve-staging.sh: line 32: pushd: subprojects: No such file or directory
+./patches/protonprep-valve-staging.sh: line 33: pushd: x11-xserver-utils: No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+./patches/protonprep-valve-staging.sh: line 36: popd: directory stack empty
+./patches/protonprep-valve-staging.sh: line 37: pushd: xutils-dev: No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+./patches/protonprep-valve-staging.sh: line 40: popd: directory stack empty
+./patches/protonprep-valve-staging.sh: line 41: popd: directory stack empty
+./patches/protonprep-valve-staging.sh: line 42: popd: directory stack empty
+~/proton-eos/wine ~/proton-eos
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+WINE: -STAGING- applying staging patches
+./patches/protonprep-valve-staging.sh: line 65: ../wine-staging/staging/patchinstall.py: No such file or directory
+WINE: -STAGING- loader-KeyboardLayouts manually applied
+can't find file to patch at input line 15
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From f2347ae7216626d248cfaf9445862561b2b5eef7 Mon Sep 17 00:00:00 2001
+|From: Alistair Leslie-Hughes <leslie_alistair@hotmail.com>
+|Date: Mon, 1 Jul 2019 09:58:55 +1000
+|Subject: [PATCH] loader: Add Keyboard Layouts registry enteries.
+|
+|Signed-off-by: Alistair Leslie-Hughes <leslie_alistair@hotmail.com>
+|---
+| loader/wine.inf.in | 209 +++++++++++++++++++++++++++++++++++++++++++++
+| 1 file changed, 209 insertions(+)
+|
+|diff --git a/loader/wine.inf.in b/loader/wine.inf.in
+|index ff601e41b26..6ffb8c56d87 100644
+|--- a/loader/wine.inf.in
+|+++ b/loader/wine.inf.in
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+5 out of 5 hunks ignored
+can't find file to patch at input line 19
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From f57e7a06cffc47773c647a10ed4d298b58fbd408 Mon Sep 17 00:00:00 2001
+|From: Alistair Leslie-Hughes <leslie_alistair@hotmail.com>
+|Date: Tue, 9 Jul 2019 14:13:28 +1000
+|Subject: [PATCH] user32: Do not enumerate the registry in
+| GetKeyboardLayoutList().
+|
+|This function returns the current list of *installed* Keyboard layouts
+|not the complete list from the registry.
+|---
+| dlls/user32/input.c       |  1 -
+| dlls/user32/tests/input.c | 35 +++++++++++++++++++++++++++++++++++
+| dlls/win32u/input.c       | 33 +--------------------------------
+| 3 files changed, 36 insertions(+), 33 deletions(-)
+|
+|diff --git a/dlls/user32/input.c b/dlls/user32/input.c
+|index c5387cf9212..2507a86e3b6 100644
+|--- a/dlls/user32/input.c
+|+++ b/dlls/user32/input.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 31
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/user32/tests/input.c b/dlls/user32/tests/input.c
+|index bf913b8e6a6..8ac46bedc71 100644
+|--- a/dlls/user32/tests/input.c
+|+++ b/dlls/user32/tests/input.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 84
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/win32u/input.c b/dlls/win32u/input.c
+|index fd16d03f733..fb452843803 100644
+|--- a/dlls/win32u/input.c
+|+++ b/dlls/win32u/input.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -STAGING- ddraw-GetPickRecords manually applied
+can't find file to patch at input line 42
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From f1dba65707a5a8ef5ec2d9c8213134b01cd735e2 Mon Sep 17 00:00:00 2001
+|From: Matthew Wong <itsmattkc@gmail.com>
+|Date: Fri, 18 Sep 2020 00:47:13 +0000
+|Subject: [PATCH] ddraw: Implement Pick() and GetPickRecords().
+|
+|Implement functions used by some games (notably LEGO Island) for
+|determining which 3D object in a scene was clicked by the mouse cursor.
+|Fighting Steel also uses this function for mouse over. Previous stubs
+|would cause LEGO Island to crash upon any click and Fighting Steel
+|to crash on game start. A patch posted years ago on the bug thread
+|provided the minimum functionality to prevent crashes, but still
+|rendered large portions of the game inaccessible without them
+|implemented correctly.
+|
+|Picking has been implemented by adding a "pick mode" in
+|d3d_execute_buffer_execute() which skips any drawing functions
+|leaving just the vertex processing. Adds click tests for each triangle
+|when in pick mode for creating an array of D3DPICKRECORDs.
+|
+|Stress testing reveals this patch's Pick() implementation may have
+|slight inaccuracies to the original function; occasionally pixels right
+|on triangle edges result in successful picks when they don't with the
+|original function (and vice versa). It may be some sort of floating
+|point rounding error or other algorithm difference that would be
+|difficult to determine without seeing the original code. In practice, I
+|believe this inaccuracy is so negligible that it won't produce any
+|undesirable results for the user.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=10729
+|Signed-off-by: Matthew Wong <itsmattkc@gmail.com>
+|Signed-off-by: Myah Caron <qsniyg@protonmail.com>
+|---
+| dlls/ddraw/ddraw_private.h |   7 +-
+| dlls/ddraw/device.c        |  67 ++++++++++++--
+| dlls/ddraw/executebuffer.c | 176 ++++++++++++++++++++++++++++++++++++-
+| 4 files changed, 371 insertions(+), 10 deletions(-)
+|
+|diff --git a/dlls/ddraw/ddraw_private.h b/dlls/ddraw/ddraw_private.h
+|index 01a9579651c..889a64219e5 100644
+|--- a/dlls/ddraw/ddraw_private.h
+|+++ b/dlls/ddraw/ddraw_private.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 67
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ddraw/device.c b/dlls/ddraw/device.c
+|index 80556e96787..b3b63d7b361 100644
+|--- a/dlls/ddraw/device.c
+|+++ b/dlls/ddraw/device.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+can't find file to patch at input line 177
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ddraw/executebuffer.c b/dlls/ddraw/executebuffer.c
+|index 13e639eda3f..bb050fe16b8 100644
+|--- a/dlls/ddraw/executebuffer.c
+|+++ b/dlls/ddraw/executebuffer.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+WINE: -STAGING- ntdll-Hide_Wine_Exports manually applied
+./patches/protonprep-valve-staging.sh: line 219: ../wine-staging/patches/ntdll-Hide_Wine_Exports/0001-ntdll-Add-support-for-hiding-wine-version-informatio.patch: No such file or directory
+WINE: -STAGING- ntdll-WRITECOPY manually applied
+can't find file to patch at input line 19
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 52baf4b2f68a78a2d0a0ad16fac8e25af70400ff Mon Sep 17 00:00:00 2001
+|From: Andrew Wesie <awesie@gmail.com>
+|Date: Fri, 24 Apr 2020 14:55:17 -0500
+|Subject: [PATCH] ntdll: Report unmodified WRITECOPY pages as shared.
+|
+|We also need to clear the modified bit after we clear memory in map_image to
+|match the behavior of Windows.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=48665
+|Signed-off-by: Andrew Wesie <awesie@gmail.com>
+|---
+| dlls/ntdll/unix/virtual.c | 4 +++-
+| 1 file changed, 3 insertions(+), 1 deletion(-)
+|
+|diff --git a/dlls/ntdll/unix/virtual.c b/dlls/ntdll/unix/virtual.c
+|index 9c265db365e..08b37e185bd 100644
+|--- a/dlls/ntdll/unix/virtual.c
+|+++ b/dlls/ntdll/unix/virtual.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -STAGING- wineboot-ProxySettings manually applied
+can't find file to patch at input line 15
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 584eecc73a8cba537b8f50932769729a29fe7d3d Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?Michael=20M=C3=BCller?= <michael@fds-team.de>
+|Date: Mon, 26 Dec 2016 16:37:40 +0100
+|Subject: [PATCH] wineboot: Initialize proxy settings registry key.
+|
+|---
+| programs/wineboot/Makefile.in | 2 +-
+| programs/wineboot/wineboot.c  | 9 +++++++++
+| 2 files changed, 10 insertions(+), 1 deletion(-)
+|
+|diff --git a/programs/wineboot/Makefile.in b/programs/wineboot/Makefile.in
+|index 667f8f48702..4a1747ad047 100644
+|--- a/programs/wineboot/Makefile.in
+|+++ b/programs/wineboot/Makefile.in
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 27
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/wineboot/wineboot.c b/programs/wineboot/wineboot.c
+|index 14943b005ef..9aab3b68e5b 100644
+|--- a/programs/wineboot/wineboot.c
+|+++ b/programs/wineboot/wineboot.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+WINE: -STAGING- winex11-Vulkan_support manually applied
+can't find file to patch at input line 17
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From b6c918acf5996c494bece9efb1439fe00b81a274 Mon Sep 17 00:00:00 2001
+|From: Alistair Leslie-Hughes <leslie_alistair@hotmail.com>
+|Date: Fri, 1 Jun 2018 14:03:26 +1000
+|Subject: [PATCH] winex11: Specify a default vulkan driver if one not found at
+| build time
+|
+|We cannot specify it as a dependency since Debian Jessie has the
+|vulkan library in backports and not everybody will have this mapped.
+|---
+| dlls/winex11.drv/vulkan.c | 38 ++++++++++++++++----------------------
+| 1 file changed, 16 insertions(+), 22 deletions(-)
+|
+|diff --git a/dlls/winex11.drv/vulkan.c b/dlls/winex11.drv/vulkan.c
+|index f4fe202dfaf..1768444b2e5 100644
+|--- a/dlls/winex11.drv/vulkan.c
+|+++ b/dlls/winex11.drv/vulkan.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+WINE: -STAGING- user32-FlashWindowEx manually applied
+can't find file to patch at input line 15
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 04c565bea63d13790703f4823b6719d45e376076 Mon Sep 17 00:00:00 2001
+|From: James Coonradt <gamax92@aol.com>
+|Date: Tue, 19 Sep 2017 12:28:50 -0600
+|Subject: [PATCH] user32: Improve FlashWindowEx message and return value.
+|
+|---
+| dlls/user32/tests/win.c | 4 ++--
+| dlls/win32u/window.c    | 5 ++---
+| 2 files changed, 4 insertions(+), 5 deletions(-)
+|
+|diff --git a/dlls/user32/tests/win.c b/dlls/user32/tests/win.c
+|index 8464a9f02d8..f2cedc30980 100644
+|--- a/dlls/user32/tests/win.c
+|+++ b/dlls/user32/tests/win.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 37
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/win32u/window.c b/dlls/win32u/window.c
+|index f008735f2e3..e8245684b0c 100644
+|--- a/dlls/win32u/window.c
+|+++ b/dlls/win32u/window.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -STAGING- kernel32-Debugger manually applied
+./patches/protonprep-valve-staging.sh: line 234: ../wine-staging/patches/kernel32-Debugger/0001-kernel32-Always-start-debugger-on-WinSta0.patch: No such file or directory
+WINE: -STAGING- ntdll-ext4-case-folder manually applied
+./patches/protonprep-valve-staging.sh: line 237: ../wine-staging/patches/ntdll-ext4-case-folder/0002-ntdll-server-Mark-drive_c-as-case-insensitive-when-c.patch: No such file or directory
+WINE: -STAGING- ntdll-NtQuerySection manually applied
+./patches/protonprep-valve-staging.sh: line 240: ../wine-staging/patches/ntdll-NtQuerySection/0002-kernel32-tests-Add-tests-for-NtQuerySection.patch: No such file or directory
+WINE: -STAGING- ntdll-NtSetLdtEntries manually applied
+./patches/protonprep-valve-staging.sh: line 243: ../wine-staging/patches/ntdll-NtSetLdtEntries/0001-ntdll-Implement-NtSetLdtEntries.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 244: ../wine-staging/patches/ntdll-NtSetLdtEntries/0002-libs-wine-Allow-to-modify-reserved-LDT-entries.patch: No such file or directory
+WINE: -STAGING- ntdll-ProcessQuotaLimits manually applied
+./patches/protonprep-valve-staging.sh: line 247: ../wine-staging/patches/ntdll-ProcessQuotaLimits/0001-ntdll-Add-fake-data-implementation-for-ProcessQuotaL.patch: No such file or directory
+WINE: -STAGING- winedevice-Default_Drivers manually applied
+./patches/protonprep-valve-staging.sh: line 250: ../wine-staging/patches/winedevice-Default_Drivers/0001-win32k.sys-Add-stub-driver.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 251: ../wine-staging/patches/winedevice-Default_Drivers/0002-dxgkrnl.sys-Add-stub-driver.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 252: ../wine-staging/patches/winedevice-Default_Drivers/0003-dxgmms1.sys-Add-stub-driver.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 253: ../wine-staging/patches/winedevice-Default_Drivers/0004-programs-winedevice-Load-some-common-drivers-and-fix.patch: No such file or directory
+WINE: -STAGING- winex11-Fixed-scancodes manually applied
+can't find file to patch at input line 24
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From b97b584a775bf22c19c94064a7321770764cf25e Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?R=C3=A9mi=20Bernon?= <rbernon@codeweavers.com>
+|Date: Thu, 5 Jan 2023 21:16:38 +0100
+|Subject: [PATCH] winecfg: Move input config options to a dedicated tab.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=30984
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=45605
+|---
+| MAINTAINERS                  |   1 +
+| programs/winecfg/Makefile.in |   1 +
+| programs/winecfg/input.c     | 105 +++++++++++++++++++++++++++++++++++
+| programs/winecfg/main.c      |  12 +++-
+| programs/winecfg/resource.h  |   6 +-
+| programs/winecfg/winecfg.h   |   4 ++
+| programs/winecfg/winecfg.rc  |  38 ++++++++-----
+| programs/winecfg/x11drvdlg.c |  18 +-----
+| 8 files changed, 151 insertions(+), 34 deletions(-)
+| create mode 100644 programs/winecfg/input.c
+|
+|diff --git a/MAINTAINERS b/MAINTAINERS
+|index dc5c85cc4ec..a5902235be8 100644
+|--- a/MAINTAINERS
+|+++ b/MAINTAINERS
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 36
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/Makefile.in b/programs/winecfg/Makefile.in
+|index 99c829a9468..1105a99e177 100644
+|--- a/programs/winecfg/Makefile.in
+|+++ b/programs/winecfg/Makefile.in
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+The next patch would create the file programs/winecfg/input.c,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 159
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/resource.h b/programs/winecfg/resource.h
+|index c0d7adadcc1..6e2953c0d70 100644
+|--- a/programs/winecfg/resource.h
+|+++ b/programs/winecfg/resource.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+can't find file to patch at input line 194
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/winecfg.h b/programs/winecfg/winecfg.h
+|index d4fedff5afb..b83234470c1 100644
+|--- a/programs/winecfg/winecfg.h
+|+++ b/programs/winecfg/winecfg.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 216
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/winecfg.rc b/programs/winecfg/winecfg.rc
+|index 428c477413c..1231e5319c5 100644
+|--- a/programs/winecfg/winecfg.rc
+|+++ b/programs/winecfg/winecfg.rc
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 280
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/x11drvdlg.c b/programs/winecfg/x11drvdlg.c
+|index 215cd6534a2..cd7b7552a1e 100644
+|--- a/programs/winecfg/x11drvdlg.c
+|+++ b/programs/winecfg/x11drvdlg.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+can't find file to patch at input line 17
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 9b1c1240b270142564a8ef9350720c92004efcc3 Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?R=C3=A9mi=20Bernon?= <rbernon@codeweavers.com>
+|Date: Fri, 6 Jan 2023 11:22:10 +0100
+|Subject: [PATCH 2/9] winex11: Always create the HKCU configuration registry
+| key.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=30984
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=45605
+|---
+| dlls/winex11.drv/x11drv_main.c | 67 ++++++++++++++++++++++++++++++++--
+| 1 file changed, 64 insertions(+), 3 deletions(-)
+|
+|diff --git a/dlls/winex11.drv/x11drv_main.c b/dlls/winex11.drv/x11drv_main.c
+|index 797e4f92d38..e04bdedd43a 100644
+|--- a/dlls/winex11.drv/x11drv_main.c
+|+++ b/dlls/winex11.drv/x11drv_main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 18
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 3d27835e97b472ed46ffbfd48bc1e16a30d1ff61 Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?R=C3=A9mi=20Bernon?= <rbernon@codeweavers.com>
+|Date: Fri, 6 Jan 2023 08:09:11 +0100
+|Subject: [PATCH] winex11: Write supported keyboard layout list in registry.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=30984
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=45605
+|---
+| dlls/winex11.drv/keyboard.c    | 21 +++++++++++++++++++++
+| dlls/winex11.drv/x11drv.h      |  4 ++++
+| dlls/winex11.drv/x11drv_main.c | 17 +++++++++++++++++
+| 3 files changed, 42 insertions(+)
+|
+|diff --git a/dlls/winex11.drv/keyboard.c b/dlls/winex11.drv/keyboard.c
+|index 5c7f6c37276..1846bd923a5 100644
+|--- a/dlls/winex11.drv/keyboard.c
+|+++ b/dlls/winex11.drv/keyboard.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 50
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/x11drv.h b/dlls/winex11.drv/x11drv.h
+|index 2917579927c..da501ad4618 100644
+|--- a/dlls/winex11.drv/x11drv.h
+|+++ b/dlls/winex11.drv/x11drv.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 65
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/x11drv_main.c b/dlls/winex11.drv/x11drv_main.c
+|index 70212a067b0..73b2237778b 100644
+|--- a/dlls/winex11.drv/x11drv_main.c
+|+++ b/dlls/winex11.drv/x11drv_main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+patching file programs/winecfg/input.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+4 out of 4 hunks ignored -- saving rejects to file programs/winecfg/input.c.rej
+can't find file to patch at input line 98
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/resource.h b/programs/winecfg/resource.h
+|index 78deb1a23a2..485bc18a217 100644
+|--- a/programs/winecfg/resource.h
+|+++ b/programs/winecfg/resource.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 109
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/winecfg.rc b/programs/winecfg/winecfg.rc
+|index 605ec54632c..e0742794357 100644
+|--- a/programs/winecfg/winecfg.rc
+|+++ b/programs/winecfg/winecfg.rc
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 18
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 4c7d3e59dc62e62aac5ce273494e1a7cb5349bd1 Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?R=C3=A9mi=20Bernon?= <rbernon@codeweavers.com>
+|Date: Fri, 6 Jan 2023 08:09:11 +0100
+|Subject: [PATCH] winex11: Use the user configured keyboard layout if any.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=30984
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=45605
+|---
+| dlls/winex11.drv/keyboard.c    | 33 +++++++++++++++++++++++++++------
+| dlls/winex11.drv/x11drv.h      |  2 ++
+| dlls/winex11.drv/x11drv_main.c |  4 ++++
+| 3 files changed, 33 insertions(+), 6 deletions(-)
+|
+|diff --git a/dlls/winex11.drv/keyboard.c b/dlls/winex11.drv/keyboard.c
+|index 1846bd923a5..fe87ae2235d 100644
+|--- a/dlls/winex11.drv/keyboard.c
+|+++ b/dlls/winex11.drv/keyboard.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+6 out of 6 hunks ignored
+can't find file to patch at input line 100
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/x11drv.h b/dlls/winex11.drv/x11drv.h
+|index 52260474ad2..f6baca922ef 100644
+|--- a/dlls/winex11.drv/x11drv.h
+|+++ b/dlls/winex11.drv/x11drv.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 120
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/x11drv_main.c b/dlls/winex11.drv/x11drv_main.c
+|index b83365861d4..842f03be998 100644
+|--- a/dlls/winex11.drv/x11drv_main.c
+|+++ b/dlls/winex11.drv/x11drv_main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+patching file programs/winecfg/input.c
+Hunk #1 succeeded at 75 with fuzz 1 (offset 10 lines).
+Hunk #2 succeeded at 122 with fuzz 1 (offset 24 lines).
+Hunk #3 FAILED at 124.
+1 out of 3 hunks FAILED -- saving rejects to file programs/winecfg/input.c.rej
+can't find file to patch at input line 56
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/resource.h b/programs/winecfg/resource.h
+|index 485bc18a217..e84cd1a2530 100644
+|--- a/programs/winecfg/resource.h
+|+++ b/programs/winecfg/resource.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 67
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/programs/winecfg/winecfg.rc b/programs/winecfg/winecfg.rc
+|index e0742794357..4d252b43564 100644
+|--- a/programs/winecfg/winecfg.rc
+|+++ b/programs/winecfg/winecfg.rc
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 17
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 495e0f49611f79291bf95f9236030dd331dff67f Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?R=C3=A9mi=20Bernon?= <rbernon@codeweavers.com>
+|Date: Wed, 30 Nov 2022 18:46:00 +0100
+|Subject: [PATCH 7/9] winex11: Use scancode high bit to set
+| KEYEVENTF_EXTENDEDKEY flag.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=30984
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=45605
+|---
+| dlls/winex11.drv/keyboard.c | 12 ++++++------
+| 1 file changed, 6 insertions(+), 6 deletions(-)
+|
+|diff --git a/dlls/winex11.drv/keyboard.c b/dlls/winex11.drv/keyboard.c
+|index 26548c9256e..5065d8048d1 100644
+|--- a/dlls/winex11.drv/keyboard.c
+|+++ b/dlls/winex11.drv/keyboard.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 22
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From c61fac8a28ccc3f6bfb1e502cfc1e4027fe2d2c9 Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?R=C3=A9mi=20Bernon?= <rbernon@codeweavers.com>
+|Date: Wed, 30 Nov 2022 18:46:00 +0100
+|Subject: [PATCH] winex11: Support fixed X11 keycode to scancode conversion.
+|
+|X11 keycodes are just Linux keycodes + 8 nowadays according to evdev or
+|libinput drivers, and we can avoid innacurate reconstruction in the most
+|common case.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=30984
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=45605
+|---
+| dlls/winex11.drv/keyboard.c    | 44 ++++++++++++++++++++++++++++++++--
+| dlls/winex11.drv/x11drv.h      |  1 +
+| dlls/winex11.drv/x11drv_main.c |  4 ++++
+| 3 files changed, 47 insertions(+), 2 deletions(-)
+|
+|diff --git a/dlls/winex11.drv/keyboard.c b/dlls/winex11.drv/keyboard.c
+|index dbc1e1ea689..6a71da1a5d9 100644
+|--- a/dlls/winex11.drv/keyboard.c
+|+++ b/dlls/winex11.drv/keyboard.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 91
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/x11drv.h b/dlls/winex11.drv/x11drv.h
+|index f6baca922ef..e11c48dd3e2 100644
+|--- a/dlls/winex11.drv/x11drv.h
+|+++ b/dlls/winex11.drv/x11drv.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 103
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/x11drv_main.c b/dlls/winex11.drv/x11drv_main.c
+|index 842f03be998..782989dab4b 100644
+|--- a/dlls/winex11.drv/x11drv_main.c
+|+++ b/dlls/winex11.drv/x11drv_main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 17
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From cdb9c20dfeede2240d102ac2f407f58591b3ec2d Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?R=C3=A9mi=20Bernon?= <rbernon@codeweavers.com>
+|Date: Fri, 6 Jan 2023 11:31:36 +0100
+|Subject: [PATCH] winex11: Disable keyboard scancode auto-detection by default.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=30984
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=45605
+|---
+| dlls/winex11.drv/x11drv_main.c | 2 +-
+| programs/winecfg/input.c       | 2 +-
+| 2 files changed, 2 insertions(+), 2 deletions(-)
+|
+|diff --git a/dlls/winex11.drv/x11drv_main.c b/dlls/winex11.drv/x11drv_main.c
+|index 782989dab4b..3bee214e09b 100644
+|--- a/dlls/winex11.drv/x11drv_main.c
+|+++ b/dlls/winex11.drv/x11drv_main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+patching file programs/winecfg/input.c
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file programs/winecfg/input.c.rej
+WINE: -STAGING- fltmgr.sys-FltBuildDefaultSecurityDescriptor manually applied
+./patches/protonprep-valve-staging.sh: line 267: ../wine-staging/patches/fltmgr.sys-FltBuildDefaultSecurityDescriptor/0001-fltmgr.sys-Implement-FltBuildDefaultSecurityDescript.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 268: ../wine-staging/patches/fltmgr.sys-FltBuildDefaultSecurityDescriptor/0002-fltmgr.sys-Create-import-library.patch: No such file or directory
+./patches/protonprep-valve-staging.sh: line 269: ../wine-staging/patches/fltmgr.sys-FltBuildDefaultSecurityDescriptor/0003-ntoskrnl.exe-Add-FltBuildDefaultSecurityDescriptor-t.patch: No such file or directory
+WINE: -STAGING- Staging manually applied
+can't find file to patch at input line 15
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 09ae5713ee29184ff4f295b04674ca0f9f815d39 Mon Sep 17 00:00:00 2001
+|From: Sebastian Lackner <sebastian@fds-team.de>
+|Date: Thu, 2 Oct 2014 19:44:31 +0200
+|Subject: [PATCH] ntdll: Print a warning message specifying the wine-staging
+| branch name and version.
+|
+|---
+| dlls/ntdll/loader.c | 15 +++++++++++++++
+| 1 file changed, 15 insertions(+)
+|
+|diff --git a/dlls/ntdll/loader.c b/dlls/ntdll/loader.c
+|index 105a7420dcc..e437bde4e8c 100644
+|--- a/dlls/ntdll/loader.c
+|+++ b/dlls/ntdll/loader.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+can't find file to patch at input line 14
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 8aa6fb73e3142d86ba354c204313b8a74a5fa43d Mon Sep 17 00:00:00 2001
+|From: Sebastian Lackner <sebastian@fds-team.de>
+|Date: Thu, 2 Oct 2014 19:53:46 +0200
+|Subject: [PATCH] winelib: Append '(Staging)' at the end of the version string.
+|
+|---
+| configure.ac | 2 +-
+| 1 file changed, 1 insertion(+), 1 deletion(-)
+|
+|diff --git a/configure.ac b/configure.ac
+|index f86a5decb07..3d7f9cc96e6 100644
+|--- a/configure.ac
+|+++ b/configure.ac
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -GAME FIXES- assetto corsa hud fix
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 0b242db6d63ec466c09d47020596ba941ce7cdf2 Mon Sep 17 00:00:00 2001
+|From: GloriousEggroll <gloriouseggroll@gmail.com>
+|Date: Sat, 16 May 2020 20:05:38 -0600
+|Subject: [PATCH] Revert "dwrite: Release file streams when building
+| collections."
+|
+|This reverts commit d19e34d8f072514cb903bda89767996ba078bae4.
+|---
+| dlls/dwrite/font.c | 2 --
+| 1 file changed, 2 deletions(-)
+|
+|diff --git a/dlls/dwrite/font.c b/dlls/dwrite/font.c
+|index c473a306720..dbf6c611f86 100644
+|--- a/dlls/dwrite/font.c
+|+++ b/dlls/dwrite/font.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -GAME FIXES- add file search workaround hack for Phantasy Star Online 2 (WINE_NO_OPEN_FILE_SEARCH)
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ntdll/unix/file.c b/dlls/ntdll/unix/file.c
+|index eb526f6aa9a..2925252b6c8 100644
+|--- a/dlls/ntdll/unix/file.c
+|+++ b/dlls/ntdll/unix/file.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -GAME FIXES- add xinput support to Dragon Age Inquisition
+can't find file to patch at input line 54
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 4fd6c1a286dd2babd098decf045522be1dff5656 Mon Sep 17 00:00:00 2001
+|From: Cameron Moore <moore.cameron1111@gmail.com>
+|Date: Sat, 3 Feb 2024 21:21:50 -0500
+|Subject: [PATCH] user32: [GAMEFIX] Fix xinput support for Dragon Age
+| Inquisition
+|
+|user32: [GAMEFIX] 1/2 Dragon Age Inquisition: fix xinput support
+|
+|https://bugs.winehq.org/show_bug.cgi?id=47070
+|
+|I'm not completely sure on the specifics of why the bug happens,
+|but there are two main threads involved. Thread A owns the window
+|object for the game. Thread B makes all the calls to XInputGetState.
+|However, Thread B checks if the window has focus to receive keyboard
+|inputs every frame. Thread B calls AttachThreadInput to attach its
+|message queue to the Thread A's window a few times before the bug
+|starts occurring along with one separate time at the start where
+|Thread A attaches Thread B's message queue to the window as well.
+|The message queue is detached one last time and then Thread B no
+|longer has access to the window.
+|
+|My workaround checks GetFocus for when it starts receiving Null
+|for a response (meaning it does not have access to a window anymore).
+|Prior to this, AttachThreadInput stores the IDs of the two threads
+|which call the function the very first time (hopefully this works
+|with the EA App as I've been debugging this with Origin which doesn't
+|seem to call either of the two WINAPI functions as long as you load
+|straight into the game from the Origin library menu). When GetFocus
+|realizes it does not have a window for the thread, it calls
+|AttachThreadInput with the two thread IDs. This allows Thread B to
+|access the window, which let's GetFocus return the proper window
+|handle, which then let's the program access XInputGetState meaning
+|the controller finally works.
+|
+|Anyway, as far as the final cause of the bug: it might be because
+|of thread prioritization causing Thread B to AttachThreadInput to
+|be called by it last as the only time Thread A calls it, it does
+|not detach the message queue afterwards. This leads me to believe
+|that the bug might just be caused by incomplete wine
+|functionality / stubs. Although, this part is speculation.
+|
+|user32: [GAMEFIX] 2/2 Dragon Age Inquisition: fix xinput support
+|
+|Wrap hack with a SteamGameId check and cache it.
+|---
+| dlls/user32/input.c | 22 +++++++++++++++++++++-
+| dlls/win32u/input.c | 37 +++++++++++++++++++++++++++++++++++++
+| 2 files changed, 58 insertions(+), 1 deletion(-)
+|
+|diff --git a/dlls/user32/input.c b/dlls/user32/input.c
+|index f91b65a5f56..dda952262ac 100644
+|--- a/dlls/user32/input.c
+|+++ b/dlls/user32/input.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 88
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/win32u/input.c b/dlls/win32u/input.c
+|index 6268c978dab..1dbb6690c03 100644
+|--- a/dlls/win32u/input.c
+|+++ b/dlls/win32u/input.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -GAME FIXES- add set current directory workaround for Vanguard Saga of Heroes
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/kernelbase/file.c b/dlls/kernelbase/file.c
+|index f4f9d14518f..69005607224 100644
+|--- a/dlls/kernelbase/file.c
+|+++ b/dlls/kernelbase/file.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -GAME FIXES- add __TRY/__EXCEPT_PAGE_FAULT wnsprintfA xDefiant patch because of a bad arg passed by the game that would exit to desktop
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/shlwapi/wsprintf.c b/dlls/shlwapi/wsprintf.c
+|index fbd2a7e75bf..e352131bc79 100644
+|--- a/dlls/shlwapi/wsprintf.c
+|+++ b/dlls/shlwapi/wsprintf.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -GAME FIXES- Microsoft Flight Simulator 2024 needs WerRegisterCustomMetadata since SU1
+can't find file to patch at input line 18
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From a20e9ded7dd39feba4eb13f3cade3a6744f3bfda Mon Sep 17 00:00:00 2001
+|From: Raphael Riemann <raphael.riemann@gmail.com>
+|Date: Fri, 7 Mar 2025 15:12:21 +0100
+|Subject: [PATCH] kernelbase: Add WerRegisterCustomMetadata stub.
+|
+|Microsoft Flight Simulator 2024 needs this since SU1.
+|---
+| dlls/kernel32/kernel32.spec     |  2 ++
+| dlls/kernelbase/debug.c         | 20 ++++++++++++++++++++
+| dlls/kernelbase/kernelbase.spec |  2 ++
+| include/werapi.h                |  2 ++
+| 4 files changed, 26 insertions(+)
+|
+|diff --git a/dlls/kernel32/kernel32.spec b/dlls/kernel32/kernel32.spec
+|index 34f1090e902..79deecc9534 100644
+|--- a/dlls/kernel32/kernel32.spec
+|+++ b/dlls/kernel32/kernel32.spec
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 35
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/kernelbase/debug.c b/dlls/kernelbase/debug.c
+|index 6423ff4573d..36e1c6af7f6 100644
+|--- a/dlls/kernelbase/debug.c
+|+++ b/dlls/kernelbase/debug.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 73
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/kernelbase/kernelbase.spec b/dlls/kernelbase/kernelbase.spec
+|index 5c628b75278..3580bf74e2e 100644
+|--- a/dlls/kernelbase/kernelbase.spec
+|+++ b/dlls/kernelbase/kernelbase.spec
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 90
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/include/werapi.h b/include/werapi.h
+|index 30ba6cd9505..344cecbd814 100644
+|--- a/include/werapi.h
+|+++ b/include/werapi.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -PENDING- unity crash hotfix
+can't find file to patch at input line 3
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|--- a/dlls/dxgi/dxgi_main.c	
+|+++ a/dlls/dxgi/dxgi_main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -PENDING- Add WINE_DISABLE_SFN option. (Yakuza 5 cutscenes fix)
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ntdll/unix/file.c b/dlls/ntdll/unix/file.c
+|index 870c5e39271..3162d36a803 100644
+|--- a/dlls/ntdll/unix/file.c
+|+++ b/dlls/ntdll/unix/file.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 39
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ntdll/unix/loader.c b/dlls/ntdll/unix/loader.c
+|index 5f7f114b286..cbea0dc5d2d 100644
+|--- a/dlls/ntdll/unix/loader.c
+|+++ b/dlls/ntdll/unix/loader.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 64
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ntdll/unix/unix_private.h b/dlls/ntdll/unix/unix_private.h
+|index cae15947bbd..6403dad858d 100644
+|--- a/dlls/ntdll/unix/unix_private.h
+|+++ b/dlls/ntdll/unix/unix_private.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -PENDING- ncrypt: NCryptDecrypt implementation (PSN Login for Ghost of Tsushima)
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ncrypt/main.c b/dlls/ncrypt/main.c
+|index 3511f8f2d3f..656c80a5cb9 100644
+|--- a/dlls/ncrypt/main.c
+|+++ b/dlls/ncrypt/main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -PENDING- DXGI_FORMAT_R8G8B8A8_UNORM: Suport for DXGI_FORMAT_R8G8B8A8_UNORM on d2d_wic_render_target_init (Alt:V GTA V coustom client)
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/d2d1/wic_render_target.c b/dlls/d2d1/wic_render_target.c
+|index 858c187e3bc..77d2adb705e 100644
+|--- a/dlls/d2d1/wic_render_target.c
+|+++ b/dlls/d2d1/wic_render_target.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -GAME FIXES- add webview2 patches for GIRLS' FRONTLINE 2: EXILIUM and Vermintide 2
+can't find file to patch at input line 23
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From b413308e61398c42d7fae7e926348ad965fc3479 Mon Sep 17 00:00:00 2001
+|From: =?UTF-8?q?Bernhard=20K=C3=B6lbl?= <bkoelbl@codeweavers.com>
+|Date: Thu, 12 Dec 2024 15:41:56 +0100
+|Subject: [PATCH 1/2] embeddedbrowserwebview: Add stub dll.
+|
+|---
+| configure.ac                                  |  1 +
+| dlls/embeddedbrowserwebview/Makefile.in       |  3 +++
+| .../embeddedbrowserwebview.rc                 |  2 ++
+| .../embeddedbrowserwebview.rgs                | 22 +++++++++++++++++++
+| .../embeddedbrowserwebview.spec               |  8 +++++++
+| loader/wine.inf.in                            |  2 ++
+| 6 files changed, 38 insertions(+)
+| create mode 100644 dlls/embeddedbrowserwebview/Makefile.in
+| create mode 100644 dlls/embeddedbrowserwebview/embeddedbrowserwebview.rc
+| create mode 100644 dlls/embeddedbrowserwebview/embeddedbrowserwebview.rgs
+| create mode 100644 dlls/embeddedbrowserwebview/embeddedbrowserwebview.spec
+|
+|diff --git a/configure.ac b/configure.ac
+|index 6596f653fb1..4467b547552 100644
+|--- a/configure.ac
+|+++ b/configure.ac
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+The next patch would create the file dlls/embeddedbrowserwebview/Makefile.in,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+The next patch would create the file dlls/embeddedbrowserwebview/embeddedbrowserwebview.rc,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+The next patch would create the file dlls/embeddedbrowserwebview/embeddedbrowserwebview.rgs,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+The next patch would create the file dlls/embeddedbrowserwebview/embeddedbrowserwebview.spec,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 94
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/loader/wine.inf.in b/loader/wine.inf.in
+|index e3426b7ec95..95631142b5c 100644
+|--- a/loader/wine.inf.in
+|+++ b/loader/wine.inf.in
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+patching file dlls/embeddedbrowserwebview/Makefile.in
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file dlls/embeddedbrowserwebview/Makefile.in.rej
+patching file dlls/embeddedbrowserwebview/embeddedbrowserwebview.rgs
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file dlls/embeddedbrowserwebview/embeddedbrowserwebview.rgs.rej
+patching file dlls/embeddedbrowserwebview/embeddedbrowserwebview.spec
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file dlls/embeddedbrowserwebview/embeddedbrowserwebview.spec.rej
+The next patch would create the file dlls/embeddedbrowserwebview/main.c,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 220
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/include/Makefile.in b/include/Makefile.in
+|index d56bc5182d8..c5fa5980ccf 100644
+|--- a/include/Makefile.in
+|+++ b/include/Makefile.in
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+The next patch would create the file include/webview2.idl,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 17
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From a24039ad09abd72f47c4d76544d337a76fb626cf Mon Sep 17 00:00:00 2001
+|From: Louis Lenders <xerox.xerox2000x@gmail.com>
+|Date: Tue, 30 Jan 2024 10:28:47 +0100
+|Subject: [PATCH] ntdll: Add stub for RtlGetDeviceFamilyInfoEnum.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=56259
+|---
+| dlls/ntdll/ntdll.spec  |  1 +
+| dlls/ntdll/rtl.c       | 12 +++++++++
+| include/winnt.h        | 57 ++++++++++++++++++++++++++++++++++++++++++
+| 4 files changed, 94 insertions(+)
+|
+|diff --git a/dlls/ntdll/ntdll.spec b/dlls/ntdll/ntdll.spec
+|index 18dddf928cf0..64fdb6fdb246 100644
+|--- a/dlls/ntdll/ntdll.spec
+|+++ b/dlls/ntdll/ntdll.spec
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 29
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ntdll/rtl.c b/dlls/ntdll/rtl.c
+|index 0d0b2d370f33..a077108b8d0e 100644
+|--- a/dlls/ntdll/rtl.c
+|+++ b/dlls/ntdll/rtl.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 49
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/include/winnt.h b/include/winnt.h
+|index e9fef20c76d0..e1de2f29ecd5 100644
+|--- a/include/winnt.h
+|+++ b/include/winnt.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -PENDING- taskschd (NCSoft Purple Client)
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 6ec977aa004409e17e1df5a2fdee850044ddf1ca Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Sun, 25 Feb 2024 22:25:00 +0100
+|Subject: [PATCH] taskschd: Implement ITaskService_get_ConnectedUser.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=48110
+|---
+| dlls/taskschd/task.c            | 22 ++++++++++++++++++++--
+| dlls/taskschd/tests/scheduler.c | 15 +++++++++++++++
+| 2 files changed, 35 insertions(+), 2 deletions(-)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index d9ddf9d12b8..26cfeb950b0 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+5 out of 5 hunks ignored
+can't find file to patch at input line 77
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/taskschd/tests/scheduler.c b/dlls/taskschd/tests/scheduler.c
+|index bf6e13be98b..2829ba98ff2 100644
+|--- a/dlls/taskschd/tests/scheduler.c
+|+++ b/dlls/taskschd/tests/scheduler.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 15
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 3db38ea7f4856b2856f1fd5c5f9d7272ff8d0063 Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Fri, 23 Feb 2024 21:30:29 +0100
+|Subject: [PATCH] taskschd: Return success from Principal_put_RunLevel.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=49877
+|---
+| dlls/taskschd/task.c | 2 +-
+| 1 file changed, 1 insertion(+), 1 deletion(-)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index 26cfeb950b0..99a2ccdf992 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 14
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From c34159db3960104d96d6d0804476b5feda8bd522 Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Fri, 23 Feb 2024 20:25:02 +0100
+|Subject: [PATCH 1/4] include: Add IRegistrationTrigger definition.
+|
+|---
+| include/taskschd.idl | 12 ++++++++++++
+| 1 file changed, 12 insertions(+)
+|
+|diff --git a/include/taskschd.idl b/include/taskschd.idl
+|index d5577555e56..6c5e5533934 100644
+|--- a/include/taskschd.idl
+|+++ b/include/taskschd.idl
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 52
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|-- 
+|GitLab
+|
+|
+|From 4b9e76914aa0573abe3c4e186b9c95b0f859e4d0 Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Fri, 23 Feb 2024 20:49:06 +0100
+|Subject: [PATCH 2/4] taskschd: Add IRegistrationTrigger stub implementation.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=46773
+|---
+| dlls/taskschd/task.c            | 238 ++++++++++++++++++++++++++++++++
+| dlls/taskschd/tests/scheduler.c |  31 +++++
+| 2 files changed, 269 insertions(+)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index 99a2ccdf992..7ed69728b76 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 308
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/taskschd/tests/scheduler.c b/dlls/taskschd/tests/scheduler.c
+|index 2829ba98ff2..bc7c654e9a2 100644
+|--- a/dlls/taskschd/tests/scheduler.c
+|+++ b/dlls/taskschd/tests/scheduler.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 371
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|-- 
+|GitLab
+|
+|
+|From ea552a6f39771d24061b5bdd88e10371883645fe Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Fri, 23 Feb 2024 21:01:12 +0100
+|Subject: [PATCH 3/4] taskschd: Implement IRegistrationTrigger_putEnabled.
+|
+|---
+| dlls/taskschd/task.c            | 9 +++++++--
+| dlls/taskschd/tests/scheduler.c | 2 +-
+| 2 files changed, 8 insertions(+), 3 deletions(-)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index 7ed69728b76..6c94c8ec8f3 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 405
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/taskschd/tests/scheduler.c b/dlls/taskschd/tests/scheduler.c
+|index bc7c654e9a2..31f6e586e90 100644
+|--- a/dlls/taskschd/tests/scheduler.c
+|+++ b/dlls/taskschd/tests/scheduler.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 432
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|-- 
+|GitLab
+|
+|
+|From e1e0db6ebe18fa8f206246e4a0f572d5b9dd4387 Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Fri, 23 Feb 2024 21:07:28 +0100
+|Subject: [PATCH 4/4] taskschd: Implement IRegistrationTrigger_getEnabled.
+|
+|---
+| dlls/taskschd/task.c            | 11 ++++++++---
+| dlls/taskschd/tests/scheduler.c |  8 ++++----
+| 2 files changed, 12 insertions(+), 7 deletions(-)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index 6c94c8ec8f3..2fc5e15a599 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 461
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/taskschd/tests/scheduler.c b/dlls/taskschd/tests/scheduler.c
+|index 31f6e586e90..65d34dffd33 100644
+|--- a/dlls/taskschd/tests/scheduler.c
+|+++ b/dlls/taskschd/tests/scheduler.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From c2a4f3810b17f9efa3c848b473b19f641f7881f6 Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Tue, 27 Feb 2024 13:28:47 +0100
+|Subject: [PATCH] taskschd: Implement TaskService_get_ConnectedDomain.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=48110
+|---
+| dlls/taskschd/task.c            | 26 ++++++++++++++++++++++++--
+| dlls/taskschd/tests/scheduler.c | 21 +++++++++++++++++++++
+| 2 files changed, 45 insertions(+), 2 deletions(-)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index 2fc5e15a599..76cba042164 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+5 out of 5 hunks ignored
+can't find file to patch at input line 81
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/taskschd/tests/scheduler.c b/dlls/taskschd/tests/scheduler.c
+|index 65d34dffd33..31e9878a48a 100644
+|--- a/dlls/taskschd/tests/scheduler.c
+|+++ b/dlls/taskschd/tests/scheduler.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 15
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 8ee5a26f5b01b2963ecfb860de147ed5db0df493 Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Sat, 17 Feb 2024 22:29:43 +0100
+|Subject: [PATCH 1/2] taskschd: Implement IDailyTrigger_put_EndBoundary.
+|
+|---
+| dlls/taskschd/task.c            | 14 ++++++++++++--
+| dlls/taskschd/tests/scheduler.c | 23 ++++++++++++++++-------
+| 2 files changed, 28 insertions(+), 9 deletions(-)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index 76cba042164..4b9cfb8b296 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+can't find file to patch at input line 61
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/taskschd/tests/scheduler.c b/dlls/taskschd/tests/scheduler.c
+|index 31e9878a48a..ea571f71ff2 100644
+|--- a/dlls/taskschd/tests/scheduler.c
+|+++ b/dlls/taskschd/tests/scheduler.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 128
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|-- 
+|GitLab
+|
+|
+|From 6db2812411d45ca4b4d15dea9a00577ea17b508e Mon Sep 17 00:00:00 2001
+|From: Vijay Kiran Kamuju <infyquest@gmail.com>
+|Date: Sun, 18 Feb 2024 09:43:32 +0100
+|Subject: [PATCH 2/2] taskschd: Implement IDailyTrigger_get_EndBoundary.
+|
+|---
+| dlls/taskschd/task.c            | 11 +++++++++--
+| dlls/taskschd/tests/scheduler.c | 17 +++++++++++++++++
+| 2 files changed, 26 insertions(+), 2 deletions(-)
+|
+|diff --git a/dlls/taskschd/task.c b/dlls/taskschd/task.c
+|index 4b9cfb8b296..a3378a99117 100644
+|--- a/dlls/taskschd/task.c
+|+++ b/dlls/taskschd/task.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 150
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/taskschd/tests/scheduler.c b/dlls/taskschd/tests/scheduler.c
+|index ea571f71ff2..f9c209f1d84 100644
+|--- a/dlls/taskschd/tests/scheduler.c
+|+++ b/dlls/taskschd/tests/scheduler.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+WINE: -PENDING- GetDpiAwarenessContextForProcess (GTA V Enhanced)
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From a93623eced47efd4544ca334f9de373e2d529a1c Mon Sep 17 00:00:00 2001
+|From: Alistair Leslie-Hughes <leslie_alistair@hotmail.com>
+|Date: Tue, 12 Nov 2024 17:05:46 +1100
+|Subject: [PATCH] user32: Implement GetDpiAwarenessContextForProcess.
+|
+|Wine-Bug: https://bugs.winehq.org/show_bug.cgi?id=57169
+|---
+| dlls/user32/user32.spec | 1 +-
+| dlls/user32/win.c       | 7 +++++++
+| 2 files changed, 8 insertions(+)
+|
+|diff --git a/dlls/user32/user32.spec b/dlls/user32/user32.spec
+|index 87ed8f64527..56eb47c9440 100644
+|--- a/dlls/user32/user32.spec
+|+++ b/dlls/user32/user32.spec
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+patch: **** malformed patch at line 17: @ stdcall GetDlgItemTextA(long long ptr long)
+
+WINE: -FSR- fullscreen hack fsr patch
+can't find file to patch at input line 25
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From 29c6194da2de8fa9b4dea3e82cf7c6af27b215dc Mon Sep 17 00:00:00 2001
+|From: Stelios Tsampas <loathingkernel@gmail.com>
+|Date: Thu, 29 Feb 2024 00:33:20 +0200
+|Subject: [PATCH] fshack: Implement AMD FSR upscaler for fullscreen hack
+|
+|Co-authored-by: Georg Lehmann <dadschoorse@gmail.com>
+|Co-authored-by: GloriousEggroll <gloriouseggroll@gmail.com>
+|Co-authored-by: Ph42oN <julle.ys.57@gmail.com>
+|---
+| dlls/winevulkan/Makefile.in      |   2 +-
+| dlls/winevulkan/fsr_spv.h        | 744 +++++++++++++++++++++++++++++++
+| dlls/winevulkan/make_vulkan      |   2 +-
+| dlls/winevulkan/vulkan.c         | 544 +++++++++++++++++-----
+| dlls/winevulkan/vulkan_private.h |  23 +-
+| dlls/winex11.drv/fs.c            | 204 ++++++++-
+| dlls/winex11.drv/vulkan.c        |   8 +-
+| dlls/winex11.drv/x11drv.h        |   1 +
+| 8 files changed, 1416 insertions(+), 112 deletions(-)
+| create mode 100644 dlls/winevulkan/fsr_spv.h
+|
+|diff --git a/dlls/winevulkan/Makefile.in b/dlls/winevulkan/Makefile.in
+|index 52bffca2843..1c27b304177 100644
+|--- a/dlls/winevulkan/Makefile.in
+|+++ b/dlls/winevulkan/Makefile.in
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+The next patch would create the file dlls/winevulkan/fsr_spv.h,
+which already exists!  Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 788
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winevulkan/make_vulkan b/dlls/winevulkan/make_vulkan
+|index 4194df3a3dd..6f5e63ce528 100755
+|--- a/dlls/winevulkan/make_vulkan
+|+++ b/dlls/winevulkan/make_vulkan
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 801
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winevulkan/vulkan.c b/dlls/winevulkan/vulkan.c
+|index c40309ee468..9439e6b5ec2 100644
+|--- a/dlls/winevulkan/vulkan.c
+|+++ b/dlls/winevulkan/vulkan.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+26 out of 26 hunks ignored
+can't find file to patch at input line 1607
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winevulkan/vulkan_private.h b/dlls/winevulkan/vulkan_private.h
+|index ecd148ea48a..3a439a6e760 100644
+|--- a/dlls/winevulkan/vulkan_private.h
+|+++ b/dlls/winevulkan/vulkan_private.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 1656
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/fs.c b/dlls/winex11.drv/fs.c
+|index 73824021060..d079a374376 100644
+|--- a/dlls/winex11.drv/fs.c
+|+++ b/dlls/winex11.drv/fs.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+10 out of 10 hunks ignored
+can't find file to patch at input line 1937
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/vulkan.c b/dlls/winex11.drv/vulkan.c
+|index 33761764c74..dba60e0c4e0 100644
+|--- a/dlls/winex11.drv/vulkan.c
+|+++ b/dlls/winex11.drv/vulkan.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 1970
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winex11.drv/x11drv.h b/dlls/winex11.drv/x11drv.h
+|index 2868325055b..4e0f185f0c8 100644
+|--- a/dlls/winex11.drv/x11drv.h
+|+++ b/dlls/winex11.drv/x11drv.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -PENDING- Add options to disable proton media converter.
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winegstreamer/media-converter/lib.c b/dlls/winegstreamer/media-converter/lib.c
+|index 4f7884c1178..bdbda22f697 100644
+|--- a/dlls/winegstreamer/media-converter/lib.c
+|+++ b/dlls/winegstreamer/media-converter/lib.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -Nvidia Reflex- Support VK_NV_low_latency2
+can't find file to patch at input line 20
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From a614ec584bc19995fdfb535ae4cef81efe9966df Mon Sep 17 00:00:00 2001
+|From: Eric Sullivan <esullivan@nvidia.com>
+|Date: Wed, 11 Oct 2023 15:43:36 -0700
+|Subject: [PATCH] winevulkan: Add support for VK_NV_low_latency2
+|
+|To support VK_NV_low_latency2 a frame ID should be provided for each
+|call to vkQueueSubmit. This commit adds a path for fshack to provide
+|a frame ID when it submits its upscaling work, when low latency mode
+|is enabled.
+|---
+| dlls/winevulkan/make_vulkan      |  3 +++
+| dlls/winevulkan/vulkan.c         | 29 +++++++++++++++++++++++++++++
+| dlls/winevulkan/vulkan_private.h |  1 +
+| 3 files changed, 33 insertions(+)
+|
+|diff --git a/dlls/winevulkan/make_vulkan b/dlls/winevulkan/make_vulkan
+|index f5d2a5a9575..0c97c068f5f 100755
+|--- a/dlls/winevulkan/make_vulkan
+|+++ b/dlls/winevulkan/make_vulkan
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 34
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winevulkan/vulkan.c b/dlls/winevulkan/vulkan.c
+|index cf2af817ecd..d677ef777f1 100644
+|--- a/dlls/winevulkan/vulkan.c
+|+++ b/dlls/winevulkan/vulkan.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+3 out of 3 hunks ignored
+can't find file to patch at input line 88
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winevulkan/vulkan_private.h b/dlls/winevulkan/vulkan_private.h
+|index ecd148ea48a..4d55eff5059 100644
+|--- a/dlls/winevulkan/vulkan_private.h
+|+++ b/dlls/winevulkan/vulkan_private.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -CUSTOM- Downgrade MESSAGE to TRACE to remove write_watches spam
+can't find file to patch at input line 16
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From ff045a9a10273c018680f0107095eff74fa9c4b3 Mon Sep 17 00:00:00 2001
+|From: William Horvath <william@horvath.blog>
+|Date: Mon, 23 Sep 2024 11:03:23 -0700
+|Subject: [PATCH] ntdll: Downgrade 'using kernel write watches' from MESSAGE to
+| TRACE.
+|
+|It's overly verbose to be helpful, and clutters the log output.
+|---
+| dlls/ntdll/unix/virtual.c | 2 +-
+| 1 file changed, 1 insertion(+), 1 deletion(-)
+|
+|diff --git a/dlls/ntdll/unix/virtual.c b/dlls/ntdll/unix/virtual.c
+|index 53db5a354c8..7887a2fa67f 100644
+|--- a/dlls/ntdll/unix/virtual.c
+|+++ b/dlls/ntdll/unix/virtual.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -CUSTOM- Fix wine bug #56653 - GetLogicalProcessorInformation can be missing Cache information
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/ntdll/unix/system.c b/dlls/ntdll/unix/system.c
+|index 461922db7b0..1df4e2f3356 100644
+|--- a/dlls/ntdll/unix/system.c
+|+++ b/dlls/ntdll/unix/system.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+WINE: -CUSTOM- Add WINE_NO_WM_DECORATION option to disable window decorations so that borders behave properly
+can't find file to patch at input line 17
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From d39679f2ad7c4824d96fc89de740610b7117230f Mon Sep 17 00:00:00 2001
+|From: Stelios Tsampas <loathingkernel@gmail.com>
+|Date: Sat, 16 Nov 2024 14:45:36 +0200
+|Subject: [PATCH] winex11.drv: add env switch to disable wm decorations
+|
+|WINE_WM_DECORATIONS=0 disables decorations from the window manager
+|Works around issues with the mouse clicking through borderless window
+|edges.
+|---
+| dlls/winex11.drv/window.c | 4 ++++
+| 1 file changed, 4 insertions(+)
+|
+|diff --git a/dlls/winex11.drv/window.c b/dlls/winex11.drv/window.c
+|index b8075aeb5a9..53505162033 100644
+|--- a/dlls/winex11.drv/window.c
+|+++ b/dlls/winex11.drv/window.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -CUSTOM- Add PROTON_PREFER_SDL option to make it not prefer hidraw and instead expose both sdl and hidraw
+can't find file to patch at input line 5
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winebus.sys/main.c b/dlls/winebus.sys/main.c
+|index f7627fb3bb8..9611cc037fe 100644
+|--- a/dlls/winebus.sys/main.c
+|+++ b/dlls/winebus.sys/main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 33
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winebus.sys/unixlib.c b/dlls/winebus.sys/unixlib.c
+|index c3407e39b3f..2dd478b3888 100644
+|--- a/dlls/winebus.sys/unixlib.c
+|+++ b/dlls/winebus.sys/unixlib.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 56
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winebus.sys/unixlib.h b/dlls/winebus.sys/unixlib.h
+|index 731745bb9a4..3a0fc21ea0c 100644
+|--- a/dlls/winebus.sys/unixlib.h
+|+++ b/dlls/winebus.sys/unixlib.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+WINE: -PENDING- Hid multi TLC and Fanatec wheel-bases hidraw white-list
+can't find file to patch at input line 20
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|From a83269252f9794e5adc0b82b20995e4c59c52e18 Mon Sep 17 00:00:00 2001
+|From: Matthias Gorzellik <matthias.gorzellik@gmail.com>
+|Date: Mon, 3 Feb 2025 21:35:12 +0100
+|Subject: [PATCH 1/2] hidclass: Implement multiple TLC support.
+|
+|Cherry-pick changes of https://gitlab.winehq.org/wine/wine/-/merge_requests/6206
+|---
+| dlls/dinput/tests/hid.c    |  44 ++++++-
+| dlls/hidclass.sys/device.c |  14 ++-
+| dlls/hidclass.sys/hid.h    |   9 +-
+| dlls/hidclass.sys/pnp.c    | 247 ++++++++++++++++++++-----------------
+| dlls/hidparse.sys/main.c   | 162 ++++++++++++++++--------
+| dlls/winebus.sys/main.c    |  27 ++--
+| 6 files changed, 318 insertions(+), 185 deletions(-)
+|
+|diff --git a/dlls/dinput/tests/hid.c b/dlls/dinput/tests/hid.c
+|index 0a28fda6f99..b69aec62802 100644
+|--- a/dlls/dinput/tests/hid.c
+|+++ b/dlls/dinput/tests/hid.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+4 out of 4 hunks ignored
+can't find file to patch at input line 105
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/hidclass.sys/device.c b/dlls/hidclass.sys/device.c
+|index 135e58bf587..495a520eb35 100644
+|--- a/dlls/hidclass.sys/device.c
+|+++ b/dlls/hidclass.sys/device.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+5 out of 5 hunks ignored
+can't find file to patch at input line 161
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/hidclass.sys/hid.h b/dlls/hidclass.sys/hid.h
+|index e9bd85612fa..21e1fb2e58b 100644
+|--- a/dlls/hidclass.sys/hid.h
+|+++ b/dlls/hidclass.sys/hid.h
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+1 out of 1 hunk ignored
+can't find file to patch at input line 188
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/hidclass.sys/pnp.c b/dlls/hidclass.sys/pnp.c
+|index 317bee640d7..81efcc30be9 100644
+|--- a/dlls/hidclass.sys/pnp.c
+|+++ b/dlls/hidclass.sys/pnp.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+8 out of 8 hunks ignored
+can't find file to patch at input line 535
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/hidparse.sys/main.c b/dlls/hidparse.sys/main.c
+|index feb5b3531a4..8a497e53227 100644
+|--- a/dlls/hidparse.sys/main.c
+|+++ b/dlls/hidparse.sys/main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+can't find file to patch at input line 745
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|diff --git a/dlls/winebus.sys/main.c b/dlls/winebus.sys/main.c
+|index 6dd8e98ed61..cbbd51073c3 100644
+|--- a/dlls/winebus.sys/main.c
+|+++ b/dlls/winebus.sys/main.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+5 out of 5 hunks ignored
+can't find file to patch at input line 829
+Perhaps you used the wrong -p or --strip option?
+The text leading up to this was:
+--------------------------
+|
+|From 0e6f1802f6d67f0d191b2f1c6a9dc8ceae977b51 Mon Sep 17 00:00:00 2001
+|From: Matthias Gorzellik <matthias.gorzellik@gmail.com>
+|Date: Mon, 3 Feb 2025 21:36:49 +0100
+|Subject: [PATCH 2/2] hidraw: add function to identify fanatec wheel-bases and
+| enable hidraw for them
+|
+|---
+| dlls/winebus.sys/unixlib.c | 16 ++++++++++++++++
+| 1 file changed, 16 insertions(+)
+|
+|diff --git a/dlls/winebus.sys/unixlib.c b/dlls/winebus.sys/unixlib.c
+|index c3407e39b3f..45bd7f06a4c 100644
+|--- a/dlls/winebus.sys/unixlib.c
+|+++ b/dlls/winebus.sys/unixlib.c
+--------------------------
+File to patch: 
+Skip this patch? [y] 
+Skipping patch.
+2 out of 2 hunks ignored
+~/proton-eos

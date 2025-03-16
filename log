@@ -1,0 +1,32 @@
+fatal: not a git repository (or any of the parent directories): .git
+if [ ! -e build/build--local/Makefile ]; then \
+	(cd build/build--local && ../../configure.sh --build-name="-local" --enable-ccache); \
+fi
+[31;1m!![0m Unrecognized option --enable-ccache
+[31;1m!![0m Usage: ../../configure.sh { --proton-sdk-image=<image> }
+[31;1m!![0m   Generate a Makefile for building Proton.  May be run from another directory to create
+[31;1m!![0m   out-of-tree build directories (e.g. mkdir mybuild && cd mybuild && ../configure.sh)
+[31;1m!![0m 
+[31;1m!![0m   Options
+[31;1m!![0m     --help / --usage     Show this help text and exit
+[31;1m!![0m 
+[31;1m!![0m     --build-name=<name>  Set the name of the build that displays when used in Steam
+[31;1m!![0m 
+[31;1m!![0m     --container-engine=<engine> Which Docker-compatible container engine to use,
+[31;1m!![0m                                 e.g. podman. Tries to do autodiscovery when not specified.
+[31;1m!![0m 
+[31;1m!![0m     --docker-opts='<options>' Extra options to pass to Docker when invoking the runtime.
+[31;1m!![0m 
+[31;1m!![0m     --relabel-volumes Bind-mounted volumes will be relabeled. Use with caution.
+[31;1m!![0m 
+[31;1m!![0m     --enable-bear Invokes make via bear creating compile_commands.json.
+[31;1m!![0m 
+[31;1m!![0m   Steam Runtime
+[31;1m!![0m     Proton builds that are to be installed & run under the steam client must be built with
+[31;1m!![0m     the Steam Runtime SDK to ensure compatibility.  See README.md for more information.
+[31;1m!![0m 
+[31;1m!![0m     --proton-sdk-image=<image>  Automatically invoke the Steam Runtime SDK in <image>
+[31;1m!![0m                                 for build steps that must be run in an SDK
+[31;1m!![0m                                 environment.  See README.md for instructions to
+[31;1m!![0m                                 create this image.
+make: *** [Makefile:119: configure] Error 1
