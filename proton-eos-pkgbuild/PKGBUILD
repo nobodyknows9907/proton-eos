@@ -1,0 +1,27 @@
+# Maintainer: Your Name <your.email@example.com>
+pkgname=proton-eos
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="A custom Proton compatibility tool for Steam"
+arch=('x86_64')
+url="https://github.com/nobodyknows9907/proton-eos"
+license=('custom')  # Update this with the proper license, e.g., 'GPL' or 'MIT'
+depends=('wine' 'vulkan-headers' 'vulkan-tools')  # Add additional runtime dependencies as needed
+makedepends=('git' 'cmake' 'gcc' 'make' 'podman' 'perl' 'perl-json')  # Add other tools as required
+source=("git+https://github.com/nobodyknows9907/proton-eos.git")
+md5sums=('SKIP')  # Using SKIP for a git source
+
+build() {
+  cd "$srcdir/proton-eos"
+  # Create a build directory for an out-of-tree build
+  mkdir -p build && cd build
+  ../configure.sh || return 1
+  make -j"$(nproc)"
+}
+
+package() {
+  cd "$srcdir/proton-eos/build"
+  # Example: Install the main binary. Adjust according to what your build produces.
+  install -Dm755 proton-eos "$pkgdir/usr/bin/proton-eos"
+  # If there are additional files (libraries, data, etc.), install them as needed.
+}
